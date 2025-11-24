@@ -40,7 +40,8 @@ Standard steganography tools rely on "Security by Obscurity." They hide data seq
 - **🚫 Tamper Proof:** HMAC authentication tags ensure the data hasn't been modified or corrupted.
 - **📦 Any Data Type:** Hide JSON, Buffers, Text, or binary files.
 - **🧂 Optional Custom Salt:** Support for "Paranoid Mode" to prevent Rainbow Table attacks.
-- **⚡ Zero Bloat:** Minimal dependencies (only `pngjs`).
+- **💻 CLI Support:** Seal and open files directly from the terminal (v1.1).
+- **⚡ Zero Bloat:** Minimal dependencies (only `pngjs` and `commander`).
 
 ---
 
@@ -54,7 +55,33 @@ yarn add stegopix
 
 -----
 
-## 🚀 Quick Start
+## 💻 CLI Usage
+
+You can use StegoPix directly from your terminal without writing code.
+
+**1. Hide a file (Seal):**
+
+```bash
+npx stegopix seal -i vacation.png -d secrets.txt -p "my-password" -o safe.png
+```
+
+**2. Reveal a file (Open):**
+
+```bash
+npx stegopix open -i safe.png -p "my-password" -o recovered.txt
+```
+
+**Options:**
+
+  - `-i, --image`: Input image path.
+  - `-d, --data`: Data file to hide (Seal only).
+  - `-p, --password`: Password for encryption.
+  - `-o, --output`: Output file path.
+  - `-s, --salt`: (Optional) Custom salt for paranoid mode.
+
+-----
+
+## 🚀 Quick Start (Programmatic)
 
 ```typescript
 import { StegoPix } from 'stegopix';
@@ -88,7 +115,7 @@ try {
 
 ### 1\. The Chaos Engine (PRNG)
 
-Unlike traditional tools that fill Stegos 1, 2, 3... StegoPix derives a numerical seed from your password. It uses this seed to generate a deterministic sequence of pseudo-random coordinates.
+Unlike traditional tools that fill pixels 1, 2, 3... StegoPix derives a numerical seed from your password. It uses this seed to generate a deterministic sequence of pseudo-random coordinates.
 
 > *Effect: The data is "sprinkled" across the image, indistinguishable from random sensor noise.*
 
