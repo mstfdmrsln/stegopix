@@ -25,9 +25,6 @@
     "prepublishOnly": "npm run test && npm run build",
     "commit": "cz"
   },
-  "bin": {
-    "stegopix": "./dist/cli.js"
-  },
   "keywords": [
     "steganography",
     "encryption",
@@ -67,9 +64,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@vitest/coverage-v8": "^4.0.13",
-    "commander": "^14.0.2",
     "pngjs": "^7.0.0",
+    "@vitest/coverage-v8": "^4.0.13",
     "vitest": "^4.0.13"
   },
   "repository": {
