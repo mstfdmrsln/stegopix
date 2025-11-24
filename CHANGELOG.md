@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mstfdmrsln/stegopix/compare/v1.0.0...v1.0.1) (2025-11-24)
+
+
+### Bug Fixes
+
+* fixed workflow ([1cc50d6](https://github.com/mstfdmrsln/stegopix/commit/1cc50d6da0b54a3a662b63c0a80d2422ee8bfd4a))
+
 # 1.0.0 (2025-11-24)
 
 

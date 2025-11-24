@@ -1,6 +1,6 @@
 {
   "name": "stegopix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Military-grade steganography library with AES-256 encryption and scattered LSB embedding.",
   "author": "Mustafa Demiraslan <mstfdmrsln0668@gmail.com>",
   "license": "MIT",
