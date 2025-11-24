@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/mstfdmrsln/stegopix/compare/v1.1.0...v1.1.1) (2025-11-24)
+
+
+### Bug Fixes
+
+* fixed project licence ([7b0747c](https://github.com/mstfdmrsln/stegopix/commit/7b0747cb1a9509ae06cad298a4245fb8d38f5ad5))
+
 # [1.1.0](https://github.com/mstfdmrsln/stegopix/compare/v1.0.2...v1.1.0) (2025-11-24)
 
 
