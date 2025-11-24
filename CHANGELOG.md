@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mstfdmrsln/stegopix/compare/v1.0.2...v1.1.0) (2025-11-24)
+
+
+### Features
+
+* Add CLI support and update documentation ([09883ed](https://github.com/mstfdmrsln/stegopix/commit/09883ede9930a2106816530c88256942fa942eab))
+
 ## [1.0.2](https://github.com/mstfdmrsln/stegopix/compare/v1.0.1...v1.0.2) (2025-11-24)
 
 
