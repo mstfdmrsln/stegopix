@@ -1,0 +1,79 @@
+{
+  "name": "stegopix",
+  "version": "1.0.0",
+  "description": "Military-grade steganography library with AES-256 encryption and scattered LSB embedding.",
+  "author": "Mustafa Demiraslan <mstfdmrsln0668@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts", 
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "demo": "tsx examples/demo.ts",
+    "prepublishOnly": "npm run test && npm run build",
+    "commit": "cz"
+  },
+  "keywords": [
+    "steganography",
+    "encryption",
+    "security",
+    "aes-256",
+    "lsb",
+    "image-processing",
+    "data-hiding",
+    "nodejs",
+    "typescript",
+    "png",
+    "stegopix",
+    "pixel",
+    "pixel-manipulation"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^20.0.0",
+    "@types/pngjs": "^6.0.5",
+    "@vitest/ui": "4.0.13",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^25.0.2",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "pngjs": "^7.0.0",
+    "@vitest/coverage-v8": "^4.0.13",
+    "vitest": "^4.0.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstfdmrsln/stegopix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mstfdmrsln/stegopix/issues"
+  },
+  "homepage": "https://github.com/mstfdmrsln/stegopix#readme"
+}

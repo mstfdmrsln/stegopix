@@ -1,0 +1,1 @@
+export { StegoPix } from './core/vault';
